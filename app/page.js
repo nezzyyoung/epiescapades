@@ -23,10 +23,20 @@ export default function Home() {
         </nav>
       </header>
       <main className="flex flex-col gap-8 items-center flex-grow p-8 overflow-y-auto" style={{ maxHeight: 'calc(100vh - 64px)' }}>
-        <div className="flex flex-col justify-start w-full">
-          <h1 className="text-black text-4xl">CONNECT YOUR</h1>
-          <h2 className="text-yellow-500 text-6xl">ADVENTURE</h2>
+        <div className="flex flex-row justify-between items-center w-full">
+          <div className="flex flex-col"> 
+            <h1 className="text-black text-7xl">CONNECT YOUR</h1>
+            <h2 className="text-yellow-500 text-8xl">ADVENTURE</h2>
+          </div>
+          <Image src="/photo1.png" alt="Adventure" width={300} height={200} className="ml-4" />
         </div>
+
+        {/* New Section for Images with increased spacing */}
+        <section className="flex flex-row space-x-28"> {/* Increased spacing here */}
+          <Image src="/photo2.png" alt="Adventure" width={300} height={200} />
+          <Image src="/photo3.png" alt="Adventure" width={300} height={200} />
+          <Image src="/photo4.png" alt="Adventure" width={300} height={200} />
+        </section>
 
         {/* Event Listings Section */}
         <section className="w-full">
